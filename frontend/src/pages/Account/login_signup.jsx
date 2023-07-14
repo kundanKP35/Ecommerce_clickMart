@@ -7,9 +7,9 @@ import Loader from "../../components/Layout/Loader/loader";
 import MetaData from "../../components/metaData";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-// import { ToastContainer, toast } from 'react-toastify';
-// import { toastErrorOptions, toastSuccessOptions } from "../../components/toastStyles"
-// import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import { toastErrorOptions, toastSuccessOptions } from "../../components/toastStyles"
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const LoginSignup = () => {
@@ -77,7 +77,7 @@ const LoginSignup = () => {
     
     useEffect(() => {
         if (error) {
-            // toast.error(error,toastErrorOptions);
+            toast.error(error,toastErrorOptions);
             dispatch(clearError());
         }
 
@@ -157,7 +157,7 @@ const LoginSignup = () => {
                     </section>
                 </>
             )}
-            {/* <ToastContainer /> */}
+            <ToastContainer />
         </Fragment>
     )
 }
