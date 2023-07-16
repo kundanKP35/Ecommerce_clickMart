@@ -101,7 +101,7 @@ const OrderDetails = () => {
                       <img src={item.image} alt="Product" />
                       <Link to={`/product/${item.product}`}>
                         {item.name}
-                      </Link>{" "}
+                      </Link><br></br>
                       <span>
                         {item.quantity} X ₹{item.price} ={" "}
                         <b>₹{item.price * item.quantity}</b>

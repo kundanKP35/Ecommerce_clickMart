@@ -15,7 +15,7 @@ import {
 
 
 export const getProduct =
-  (keyword = "", currentPage = 1, category, ratings = 0, price = [0, 25000]) =>
+  (keyword = "", currentPage = 1, category, ratings = 0, price = [0, 120000]) =>
   async (dispatch) => {
     try {
       dispatch({ type: PRODUCT_REQUEST });
