@@ -43,7 +43,7 @@
 
 
   /* .............................. Page Not Found ............................ */
-  .page-not-found-container {
+  .page_not_found_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,12 +58,12 @@
     color: #ff3f6c;
   }
   
-  .page-not-found-message {
+  .page_not_found_message {
     font-size: 24px;
     margin-bottom: 20px;
   }
 
-  .page-not-found-container a{
+  .page_not_found_container a{
     border: none;
     background-color: #2d3243;
     padding: 0.5rem 1.8rem;
@@ -74,7 +74,7 @@
     border-radius: 4px;
 }
 
-.page-not-found-container a:hover{
+.page_not_found_container a:hover{
     background-color:  #202434;
 }
   
@@ -82,7 +82,7 @@
   @media (max-width: 600px) {
 
   
-    .page-not-found-message {
+    .page_not_found_message {
       font-size: 18px;
       margin-bottom: 10px;
     }
